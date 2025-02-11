@@ -19,9 +19,7 @@ torch-geometric 1.7
 ```
 
 ### Quick Start
-Train model on DBLP with surrogate model csgnn 
-Running DBLP with attacked model COCLE
-
+Training model on DBLP with surrogate model csgnn and running DBLP with attacked model COCLE
 ```
 python main.py    \
        --data_set DBLP     \
