@@ -19,7 +19,9 @@ torch-geometric 1.7
 ```
 
 ### Quick Start
-Training model on DBLP with surrogate model csgnn and running DBLP with attacked model COCLE
+Train model on DBLP with surrogate model csgnn 
+Running DBLP with attacked model COCLE
+
 ```
 python main.py    \
        --data_set DBLP     \
@@ -30,7 +32,22 @@ python main.py    \
        --num_neg 5     \
        --...     \
 ```
-
+### Key Parameters
+| Name   | Type   | Description   |
+|-------|-------|-------|
+| vmodel | string | Learning-based victim model |
+| smodel | string | A proxy model for simulating the victim model in a black-box environment |
+| data_set | string | Dataset declaration |
+| task_num | int | The number of queries used to train the model |
+| valid_task_num | int | The number of queries used to valid the model |
+| test_task_num | int | The number of queries used to test the model |
+| num_pos | int | Positive example |
+| num_neg | int | Negative Examples |
+| epochs | int | Epochs |
+| learning_rate | int | Learning rate |
+| attack_type | string | Attack method |
+| budget | int | Budget for the attack |
+| att_epochs | int3 | Epochs |
 ## Project Structure
 ```
 main.py                                                 # project extrance
