@@ -1,4 +1,4 @@
-# Adversarial Attacks on Learning-Based Community Search
+# Query-Aware Attacks on Learning-Based Community Search
 
 A PyTorch + torch-geometric implementation of our attack methods on learning based community search algorithm.
 
